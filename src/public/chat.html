@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>ChatCord App</title>
+  </head>
+  <body>
+    <section class="chat__section">
+      <div class="brand">
+          <!-- <img height="40" src="/wassup.png" alt=""> -->
+          <h1>Wassup</h1>
+      </div>
+      <div class="message__area"></div>
+      <div>
+          <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+          
+            <button type="button" id="video" >Video call</button>
+
+          
+      </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <script src="script/index.js"></script>
+    <script type="text/javascript">
+      document.getElementById("video").onclick= function(){
+        window.location="video.html"
+      }
+
+
+
+    </script>
+  </body>
+</html>
